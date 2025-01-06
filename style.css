@@ -11,6 +11,7 @@
     width: 100%;
   /* min-height: 100vh; */
 }
+
 .search-input{
   width: 30%;
 }
@@ -38,6 +39,9 @@
   }
   .search-input{
     width: 50%;
+  }
+  .all{
+    height: auto;
   }
 }
 
