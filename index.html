@@ -11,19 +11,123 @@
   <body>
     <div class="all">
         <div class="container">
-            <h1 class="text-center">Weather Forecast App</h1>
-            <form action="" class="d-flex justify-content-center gap-2 mt-4">
-              <input type="text" class="form-control w-25" id="validationCustom03" required>
-              <!-- <div class="search"><i class="fa-solid fa-magnifying-glass fs-3 text-success"></i></div> -->
-              <button class="btn btn-success" type="submit"><i class="fa-solid fa-magnifying-glass fs-3"></i></button>
+            <marquee behavior="" direction="right">
+              <h1 class="text-center mt-3">Weather Forecast App</h1>
+            </marquee>
+            <form action="" class="d-flex justify-content-center gap-2 mt-2">
+              <input type="text" class="form-control search-input" id="validationCustom03" required placeholder="Enter city Name...">
+              <!-- <button class="btn btn-success" type="submit"><i class="fa-solid fa-magnifying-glass fs-3"></i></button> -->
+              <button class="btn btn-dark" type="submit">Search</button>
             </form>
-            <main class="row">
-              <aside class="col-lg-6">
-                <h1>32℃</h1>
-                <h2>badagry, NG</h2>
-                <p>Cloudy</p>
+            <main class="row mt-4 mx-5 main">
+              <aside class="col-lg-6 Weather-details">
+                <h1 class="degree">32℃</h1>
+                <h1>badagry, NG</h1>
+                <h5>Cloudy</h5>
+                <h4 class="my-4">22-01-2024</h4>
               </aside>
-              <aside class="col-lg-6"></aside>
+              <aside class="col-lg-6">
+                <div class="row inner gap-3">
+                  <div class="box col-lg rounded">
+                    <h6 class="mt-2"><b>Weather Details</b></h6>
+                    <div class="text d-flex justify-content-between mt-3">
+                      <p>location:</p>
+                      <p>Ogbomoso</p>
+                    </div>
+                    <div class="text d-flex justify-content-between">
+                      <p>Time:</p>
+                      <p>2:23</p>
+                    </div>
+                    <!-- <div class="text d-flex justify-content-between">
+                      <p>location:</p>
+                      <p>Ogbomoso</p>
+                    </div> -->
+                    <div class="text d-flex justify-content-between">
+                      <p>Humidity:</p>
+                      <p>21%</p>
+                    </div>
+                    <div class="text d-flex justify-content-between">
+                      <p>Wind Speed:</p>
+                      <p>20km/h</p>
+                    </div>
+                    <div class="text d-flex justify-content-between">
+                      <p>Pressure:</p>
+                      <p>1012hPa</p>
+                    </div> <hr>
+                    <div class="text d-flex justify-content-between">
+                      <p>Min:</p>
+                      <p>35.29℃</p>
+                    </div>
+                    <div class="text d-flex justify-content-between">
+                      <p>Max:</p>
+                      <p>35.29℃</p>
+                    </div>
+                  </div>
+                  <div class="box col-lg-6 rounded">
+                    <h6 class="mt-2"><b>Next Days</b></h6>
+                    <div class="next-days-details d-flex justify-content-between align-items-center mt-3">
+                      <div class="decs">
+                        <h6 class="fs-3">25℃</h6>
+                        <p>Raining</p>
+                      </div>
+                      <div class="decs">
+                        <p>Monday</p>
+                        <p>25/01/2025</p>
+                      </div>
+                    </div>
+                    <div class="next-days-details d-flex justify-content-between align-items-center mt-3">
+                      <div class="decs">
+                        <h6 class="fs-3">23℃</h6>
+                        <p>Raining</p>
+                      </div>
+                      <div class="decs">
+                        <p>Tuesday</p>
+                        <p>26/01/2025</p>
+                      </div>
+                    </div>
+                    <div class="next-days-details d-flex justify-content-between align-items-center mt-3">
+                      <div class="decs">
+                        <h6 class="fs-3">29℃</h6>
+                        <p>Raining</p>
+                      </div>
+                      <div class="decs">
+                        <p>Wednesday</p>
+                        <p>27/01/2025</p>
+                      </div>
+                    </div>
+                    <div class="next-days-details d-flex justify-content-between align-items-center mt-3">
+                      <div class="decs">
+                        <h6 class="fs-3">26℃</h6>
+                        <p>Raining</p>
+                      </div>
+                      <div class="decs">
+                        <p>Thursday</p>
+                        <p>28/01/2025</p>
+                      </div>
+                    </div>
+                    <div class="next-days-details d-flex justify-content-between align-items-center mt-3">
+                      <div class="decs">
+                        <h6 class="fs-3">29℃</h6>
+                        <p>Raining</p>
+                      </div>
+                      <div class="decs">
+                        <p>Friday</p>
+                        <p>29/01/2025</p>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                      <div class="decs">
+                        <h6 class="fs-3">32℃</h6>
+                        <p>Raining</p>
+                      </div>
+                      <div class="decs">
+                        <p>Saturday</p>
+                        <p>30/01/2025</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </aside>
             </main>
         </div>
     </div>
