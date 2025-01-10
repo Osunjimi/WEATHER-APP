@@ -3,20 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    /* font-family: 'Poppins', sans-serif; */
+    /* overflow-y: hidden; */
+}
 .all{
-    background: url(https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg);
+    /* background: url(https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg); */
+    /* background: url(https://images.pexels.com/photos/2835436/pexels-photo-2835436.jpeg); */
+    /* background: url(https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg); */
+    /* background: url(https://images.pexels.com/photos/552785/pexels-photo-552785.jpeg); */
+    /* background: url(https://images.pexels.com/photos/462023/pexels-photo-462023.jpeg); */
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-  /* min-height: 100vh; */
-}
-
+    /* transition: background-image 1s ease-in-out; */
+} 
 .search-input{
   width: 30%;
+  font-size: 18px;
+}
+.app-name{
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 .degree{
-  font-size: 9rem;
+  font-size: 6rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 .Weather-details{
@@ -33,6 +45,16 @@
 .next-days-details{
   border-bottom: 1px solid white;
 }
+#weather-icon img {
+  width: 150px;
+  height: auto; 
+}
+@media (min-width: 1200px) {
+  /* body{
+    overflow-y: hidden !important;
+  } */
+  
+}
 @media (max-width: 991px) {
   .degree {
     font-size: 5rem;
@@ -44,7 +66,6 @@
     height: auto;
   }
 }
-
 @media (max-width: 768px) {
   .degree {
     font-size: 4rem;
