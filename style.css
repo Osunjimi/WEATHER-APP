@@ -1,68 +1,67 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    /* font-family: 'Poppins', sans-serif; */
-    /* overflow-y: hidden; */
+body {
+  /* font-family: 'Poppins', sans-serif; */
+  /* overflow-y: hidden; */
 }
-.all{
-    /* background: url(https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg); */
-    /* background: url(https://images.pexels.com/photos/2835436/pexels-photo-2835436.jpeg); */
-    /* background: url(https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg); */
-    /* background: url(https://images.pexels.com/photos/552785/pexels-photo-552785.jpeg); */
-    /* background: url(https://images.pexels.com/photos/462023/pexels-photo-462023.jpeg); */
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    /* transition: background-image 1s ease-in-out; */
-} 
-.search-input{
+.all {
+  /* background: url(https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg); */
+  /* background: url(https://images.pexels.com/photos/2835436/pexels-photo-2835436.jpeg); */
+  /* background: url(https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg); */
+  /* background: url(https://images.pexels.com/photos/552785/pexels-photo-552785.jpeg); */
+  /* background: url(https://images.pexels.com/photos/462023/pexels-photo-462023.jpeg); */
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  /* transition: background-image 1s ease-in-out; */
+}
+.search-input {
   width: 30%;
   font-size: 18px;
 }
-.app-name{
+.app-name {
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-.degree{
+.degree {
   font-size: 6rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-.Weather-details{
+.Weather-details {
   color: white;
 }
-.box{
+.box {
   /* border: 2px solid green; */
   color: white;
-  background: rgba(0, 0, 0, 0.5)
+  background: rgba(0, 0, 0, 0.5);
 }
-.decs{
+.decs {
   line-height: 2px;
 }
-.next-days-details{
+.next-days-details {
   border-bottom: 1px solid white;
 }
 #weather-icon img {
-  width: 150px;
-  height: auto; 
+  width: 160px;
+  height: auto;
 }
 @media (min-width: 1200px) {
   /* body{
     overflow-y: hidden !important;
   } */
-  
 }
 @media (max-width: 991px) {
   .degree {
     font-size: 5rem;
   }
-  .search-input{
+  .search-input {
     width: 50%;
   }
-  .all{
+  .all {
     height: auto;
   }
 }
@@ -70,13 +69,13 @@ body{
   .degree {
     font-size: 4rem;
   }
-  .search-input{
+  .search-input {
     width: 60%;
   }
-  .main{
+  .main {
     margin: 0px 20px !important;
   }
-  .Weather-details{
+  .Weather-details {
     margin-left: -5px;
   }
 }

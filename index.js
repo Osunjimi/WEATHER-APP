@@ -1,3 +1,4 @@
+
 const fetchWeatherData = async (city) => {
     const apiKey = 'e64b37006cd6dc9e54adfb6f91860ab2';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -5,7 +6,7 @@ const fetchWeatherData = async (city) => {
     try {
         const response = await fetch(url);
         if (!response.ok) {
-            throw new Error(`Error: ${response.status} - ${response.statusText}`);
+            throw new Error(`Error: ${response.status} - ${response.statusText}`); 
         }
         const data = await response.json();
         document.getElementById('city-name').innerHTML = `${data.name}, ${data.sys.country}`;
@@ -28,6 +29,8 @@ const fetchWeatherData = async (city) => {
         document.getElementById('current-wind-speed').innerHTML = `${data.wind.speed} m/s`;
         document.getElementById('weather-icon').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Weather Icon">`;
         document.getElementById('current-pressure').innerHTML = `${data.main.pressure} hPa`;
+        document.getElementById('sunrise').innerHTML = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
+        document.getElementById('sunset').innerHTML = new Date(data.sys.sunset * 1000).toLocaleTimeString();
 
     } catch (error) {
         console.error('Failed to fetch weather data:', error);
@@ -116,9 +119,10 @@ const backgrounds = [
     const allDiv = document.querySelector('.all');
     allDiv.style.transition = 'background-image 1.5s ease-in-out';
     allDiv.style.backgroundImage = `url(${backgrounds[index]})`;
-    index = (index + 1) % backgrounds.length;
+    index = (indedx + 1) % backgrounds.length;
   }
 
   setInterval(changeBackground, 120000);
   changeBackground();
+
   
